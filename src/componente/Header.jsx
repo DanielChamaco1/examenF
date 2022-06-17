@@ -1,11 +1,13 @@
 import React from 'react'
 import {Navegation} from "../navegation/Navegation"
-
+import './Header.css'
 function Header() {
   return (
-      <Navegation/>
-
+      <div >
+          <Navegation/>
+      </div>
+      
   )
 }
 
-export default Header
+export {Header}

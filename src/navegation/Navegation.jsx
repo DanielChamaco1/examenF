@@ -1,14 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Routes,Route ,NavLink,Navigate} from 'react-router-dom';
-import {Dashboard}from '../componetes/Dashboard';
-import {Home}from '../componetes/Home';
-import {About}from '../componetes/About';
-import logo from '../logo.svg';
-function Navation() {
+import {Dashboard}from '../componente/Dashboard';
+import {Home}from '../componente/Home';
+import {About}from '../componente/About';
+import '../componente/Header.css'
+function Navegation() {
   return (
     <BrowserRouter>
-    <nav>
-        <img src={logo} alt="" />
+    <nav className='header'>
         <li>
           <NavLink to='/home' >
             Home
@@ -39,4 +38,4 @@ function Navation() {
   )
 }
 
-export {Navation}
+export {Navegation}
