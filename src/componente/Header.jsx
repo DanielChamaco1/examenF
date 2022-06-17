@@ -1,14 +1,10 @@
 import React from 'react'
-import { About } from './About'
-import { Dashboard } from './Dashboard'
-import { Home } from './Home'
+import {Navegation} from "../navegation/Navegation"
 
 function Header() {
   return (
-      <>
-    <Home/>
-    <About/>
-    <Dashboard/></>
+      <Navegation/>
+
   )
 }
 
